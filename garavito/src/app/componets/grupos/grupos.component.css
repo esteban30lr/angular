@@ -1,0 +1,23 @@
+h1{
+   padding: auto;
+   margin: 10px;
+   margin-left: 10%;
+   margin-right: 10%;
+   background-color: rgb(39, 38, 38);
+   text-align: center;
+   color: white;
+   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(83, 82, 82) 70%, rgb(238, 148, 148));
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+td:hover{
+   cursor: pointer;
+   font-size: 105%;
+   color: rgb(183, 247, 255);
+}
+
+body{
+   background-color: rgb(107, 107, 107);
+}
+table{
+   color: white;
+}

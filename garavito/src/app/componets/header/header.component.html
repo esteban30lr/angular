@@ -1,0 +1,50 @@
+<head>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!---al fin comentarios saludos desde aqui se separa--->
+    <div class="sidebar">
+        <div class="contenedor-logo">
+            <div class="logo">
+                <i class='bx bxl-angular'></i> 
+                <div class="logo-name">Prueba</div>
+            </div>
+            <div>
+                <i class='bx bx-menu' id="btn" (click)="Cambiar()"></i>
+            </div>
+            <ul class="nav-lis">
+                <li>
+                    <a class="navbar-brand" routerLink="">
+                        <i class='bx bx-list-plus' ></i>
+                        <span class="link-name">Ver Lista</span>
+                    </a>
+                        <!--<span class="link-name">Ver Lista</span> --->
+                </li>
+                <li>
+                    <a class="navbar-brand" routerLink="formulario">
+                        <i class='bx bx-user' ></i>
+                        <span class="link-name">Ingresar</span>
+                    </a>
+                        <!--<span class="link-name">Ver Lista</span> --->
+                </li>
+                <li>
+                    <a class="navbar-brand" routerLink="main">
+                        <i class='bx bxs-map'></i>
+                        <span class="link-name">Municipios</span>
+                    </a>
+                        <!--<span class="link-name">Ver Lista</span> --->
+                </li>
+            </ul>
+            <div class="contenedor-perfil">
+                <div class="detalles-perfil">
+                    <div class="name-job">
+                        <div class="name"></div>
+                        <div class="job"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+

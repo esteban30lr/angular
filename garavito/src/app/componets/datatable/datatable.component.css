@@ -1,0 +1,25 @@
+h1{
+    padding: auto;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "calibri";
+}
+td:hover{
+    cursor: pointer;
+    font-size: 105%;
+    color: rgb(183, 247, 255);
+}
+
+body{
+
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 4px;
+
+}
+
+table{
+    color: white;
+}

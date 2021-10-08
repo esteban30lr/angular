@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<meta charset="utf-8">
+</head>
+<body>
+    <section class="form-registro">
+        <h4>Formulario Registro</h4>
+        <input class="control" type="text" [(ngModel)]="art.id" placeholder="Ingrese su identificacion">
+        <input class="control" type="text" [(ngModel)]="art.usuario" placeholder="Ingrese su nombre">
+        <p>Estoy deacuerdo con el uso de mis datos!</p> 
+        <button class="boton" (click)="Agregar()"  routerLink="/">Agregar</button>
+        &nbsp;
+    </section>
+</body>
+</html>

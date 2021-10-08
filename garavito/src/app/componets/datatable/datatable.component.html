@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body class="body">
+  <div class="img"></div>
+  <h1>Listada de Municipios</h1>
+  <div class="container">
+    <div class="row row-border">
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover col-border"
+  class="table table-dark  table-striped  row-border  hover table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Municipio</th>
+          <th>Dane</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of data.data" [routerLink]="['../instituciones',dato['dane']]">
+          <td>{{dato.nombre}}</td>
+          <td>{{dato.dane}}</td>
+        </tr>
+      </tbody>
+    </table>    
+    </div>   
+  </div>
+</body>
+</html>

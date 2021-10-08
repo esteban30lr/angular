@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body class="body">
+  <div class="img"></div>
+  <h1>{{title}}</h1>
+  <div class="container">
+    <div class="row row-border">
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover col-border"
+  class="table table-dark  table-striped hover table-bordered  ">
+      <thead class="thead-dark">
+        <tr>
+          <th>Identificacion</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let art of personas">
+          <td>{{art.id}}</td>
+          <td>{{art.usuario}}</td>
+        </tr>
+      </tbody>
+    </table>    
+    </div>   
+  </div>
+</body>
+</html>

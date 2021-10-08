@@ -1,0 +1,26 @@
+
+<h1>Listado de municipios</h1>
+<body>
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" 
+class="table table-striped tabled-bordered row-border hover"
+>
+
+    <thead class="encabezado">
+        <th>
+            Municipios
+        </th>
+        <th>
+            Codigo Dane
+        </th>
+
+    </thead>
+    <tr class="arreglo" *ngFor="let dato of data.data" [routerLink]="['../instituciones',dato['dane']]">
+        <td>
+            {{dato.nombre}}
+        </td>
+        <td>
+            {{dato.dane}}
+        </td>
+    </tr>
+</table>
+</body>

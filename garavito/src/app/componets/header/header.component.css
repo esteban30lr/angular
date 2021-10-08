@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri';
+}
+body{
+    position:  relative;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background-color: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{
+    width: 160px;
+}
+
+
+.sidebar .contenedor-logo .logo{
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .contenedor-logo .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.contenedor-logo .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.contenedor-logo .logo .logo-name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar .navbar-brand{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    transform: translateX(-1%);
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: white;
+    left: 25%;
+    top: 23px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    line-height: 100%;
+    transform: translateX(-1%);
+}
+
+.sidebar.active #btn{
+    position: absolute;
+    color: white;
+    left: 80%;
+    top: 23px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    line-height: 100%;
+    transform: translateX(-1%);
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 5px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+
+.sidebar ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background-color: white;
+}
+
+.sidebar ul li a i {
+    height: 50px;
+    min-width: 25px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .link-name{
+    opacity: 0;
+    pointer-events: aunto;
+}
+
+.sidebar.sidebar.active .link-name{
+    opacity: 1;
+    pointer-events: none;
+}

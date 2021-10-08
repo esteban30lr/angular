@@ -1,0 +1,55 @@
+.row{
+    display: flex;
+    box-sizing: border-box;
+}
+.row:hover{
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.boton{
+    background-color: red;
+    padding: auto;
+    margin-left: 15px ;
+    color: white;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: rgb(116, 20, 9);
+    color: rgb(255, 255, 255);
+}
+
+div{
+    padding: 5px 0;
+}
+
+.title{
+    display: flex;
+    width: 50%;
+    padding: 0 50px;
+}
+
+.precio{
+    width: 15%;
+    padding: 0 50px;
+    color: green;
+}
+
+.cantidad{
+    color:red;
+    width: 50%;
+    padding: 0 50px;
+}
+
+.completado{
+    color: #ccc;
+    text-decoration: line-through;  
+}
+.completado .precio {
+    color: #ccc;
+}
+.completado .cantidad{
+    color: #ccc;
+}
+

@@ -1,0 +1,22 @@
+<h1>Listada de Instituciones</h1>
+<div class="container">
+  <div class="row row-border">
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover"
+class="table table-dark table-striped tabled-bordered row-border hover">
+    <thead>
+      <tr>
+        <th>Institucion</th>
+        <th>Dane</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dato of data.data" [routerLink]="['/sedes',dato['dane']]">
+        <td>{{dato.nombre}}</td>
+        <td>{{dato.dane}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+
+  
