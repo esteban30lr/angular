@@ -4,4 +4,5 @@ export class Item{
         precio: number=0;
         cantidad: number=0;
         completado: boolean=false;
+        proveedor: string='pepe sanchez';
 }
